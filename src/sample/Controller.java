@@ -1,12 +1,12 @@
 package sample;
 
-import java.awt.Event;
-import java.net.URL;
-import java.util.ResourceBundle;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
+
+import java.net.URL;
+import java.util.ResourceBundle;
 
 public class Controller {
 
@@ -31,8 +31,8 @@ public class Controller {
     @FXML
     void initialize() {
     	FormButtonConnect.setOnAction(Event -> {
-    		MessageMy FormMess = new MessageMy("Title form", "Form create");
-    		FormMess.main();
+
     	});
     }
+
 }
