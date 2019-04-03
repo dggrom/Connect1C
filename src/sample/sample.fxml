@@ -5,7 +5,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 
 
-<AnchorPane fx:id="Fome" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="363.0" prefWidth="840.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+<AnchorPane fx:id="Fome" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="363.0" prefWidth="840.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <children>
       <Button fx:id="FormButtonConnect" layoutX="243.0" layoutY="258.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="355.0" text="Подключится к 1С" />
       <TextField fx:id="FormEditLogin" layoutX="243.0" layoutY="116.0" prefHeight="25.0" prefWidth="355.0" promptText="Логин" />
