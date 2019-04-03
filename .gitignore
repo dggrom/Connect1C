@@ -1,3 +1,6 @@
 .idea/
 Connect1C.iml
 out/
+.settings/
+.classpath
+.project
