@@ -18,8 +18,6 @@ public class Connect1C {
         Ole32.CoInitialize();
         DispatchPtr app = new DispatchPtr("V82.COMConnector");
 
-
-
     }
 
 }
