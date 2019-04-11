@@ -1,22 +1,31 @@
 package sample;
 
-import org.jawin.COMException;
-import org.jawin.DispatchPtr;
-import org.jawin.win32.Ole32;
+import javax.xml.namespace.QName;
+import javax.xml.ws.Service;
+import javax.xml.ws.WebServiceClient;
+import java.net.MalformedURLException;
+import java.net.URL;
 
-public class Connect1C {
+@WebServiceClient(name = "JavaLoadNomen", targetNamespace = "http://127.0.0.1/Dok", wsdlLocation = "http://127.0.0.1/Dok.ws1.1cws")
+public class Connect1C
+        extends Service {
 
-    private String Login,Pass;
+    private final static URL urlC = new URL(new URL("http://127.0.0.1/Dok"), "http://127.0.0.1/Dok.ws1.1cws");
 
-    public Connect1C(String Log, String Pas){
-        Login = Log;
-        Pass = Pas;
+    static {
+        try {
+
+        } catch (MalformedURLException e) {
+            e.printStackTrace();
+        }
     }
 
-    public void Connect() throws COMException {
+    public Connect1C(){
+        super(urlC, new QName("http://127.0.0.1/Dok","JavaLoadNomen"));
+    }
 
-        Ole32.CoInitialize();
-        DispatchPtr app = new DispatchPtr("V82.COMConnector");
+    public void Connect() {
+
 
     }
 
